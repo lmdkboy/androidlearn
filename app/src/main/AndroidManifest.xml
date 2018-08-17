@@ -9,40 +9,32 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <activity android:name="com.androidlearn.animation.AnimationActivity">
 
-
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
-
         <activity
             android:name="com.androidlearn.activity.FirstActivity"
-            android:launchMode="singleTask">
-        </activity>
-
+            android:launchMode="singleTask"></activity>
         <activity
             android:name="com.androidlearn.listview.ListViewActivity"
-            android:launchMode="singleTask">
-        </activity>
-
+            android:launchMode="singleTask"></activity>
         <activity
             android:name="com.androidlearn.activity.SecondActivity"
-            android:launchMode="singleTask">
-        </activity>
-
-        <activity
-            android:name="com.androidlearn.activity.ThirdActivity">
-        </activity>
+            android:launchMode="singleTask"></activity>
+        <activity android:name="com.androidlearn.activity.ThirdActivity"></activity>
 
         <service
             android:name="com.androidlearn.service.MyService"
             android:enabled="true"
-            android:exported="true">
-        </service>
+            android:exported="true"></service>
 
+        <activity android:name="com.androidlearn.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
+
 </manifest>
